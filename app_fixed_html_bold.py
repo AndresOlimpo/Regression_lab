@@ -16,7 +16,7 @@ st.set_page_config(
     layout="wide"
 )
 
-HERO_IMAGE = Path("/Users/andresrotstein/Downloads/ChatGPT Image May 26, 2026, 10_57_37 PM.png")
+HERO_IMAGE = Path("assets/galton_pearson.png")
 
 # =========================================================
 # STYLE
@@ -171,6 +171,34 @@ st.markdown(
         color: #111827 !important;
     }
 
+    /* Uploaded file item: make it readable on dark sidebar */
+    section[data-testid="stSidebar"] div[data-testid="stFileUploaderFile"] {
+        background-color: #1f2937 !important;
+        border-radius: 12px !important;
+        padding: 10px !important;
+        border: 1px solid #374151 !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-testid="stFileUploaderFile"] * {
+        color: white !important;
+    }
+
+    section[data-testid="stSidebar"] div[data-testid="stFileUploaderFile"] svg {
+        color: white !important;
+        fill: white !important;
+    }
+
+    /* Keep file uploader button readable */
+    section[data-testid="stSidebar"] button {
+        background-color: white !important;
+        color: #111827 !important;
+        border-radius: 10px !important;
+        border: 1px solid #d1d5db !important;
+    }
+
+    section[data-testid="stSidebar"] button * {
+        color: #111827 !important;
+    }
     .stTabs [data-baseweb="tab-list"] {
         gap: 8px;
     }
